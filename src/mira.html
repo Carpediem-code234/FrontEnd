@@ -1,356 +1,163 @@
-<section style="min-height: auto">
-  <div class="purify_bCSgLDg05tPorNTfTiwYeA==">
-    <div class="purify_YpRlqioIh2vZ8PoT285uCg==">
-      <div class="purify_AUa+FH4HhMyBfAVQfPuYsA==">
-        <a
-          href="/es-co/"
-          class="nuxt-link-active purify_ItRnXSI4rZg6hhQX83KoNw=="
-          data-testid="home-link"
-          ><svg
-            data-v-5d38db51=""
-            viewBox="0 0 76 17"
-            class="icon purify_ng558LpjS7D7jHzzfI2JPg=="
-          >
-            <title data-v-5d38db51="">Booksy logo</title>
-            <use
-              data-v-5d38db51=""
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xlink:href="#logo"
-            ></use>
-          </svg>
-        </a>
-      </div>
-      <div
-        class="purify_LHG6r5s66o6HM0cJA934ow== purify_UnqwCkKGdtWa1Qz8TgoQEw=="
-      >
-        <div data-testid="search-what-desktop">
-          <div
-            class="b-dropdown b-input-dropdown b-w-100p purify_+EKHdWJR+o0Gm2VpKKM6Nw=="
-            data-testid="what-search-dropdown"
-          >
-            <div role="button" class="b-dropdown-toggle">
-              <div class="b-form-field">
-                <!---->
-                <div class="b-form-group purify_yqBOaC4mdKhdWQFs-fCk6w==">
-                  <div class="b-form-group-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      role="img"
-                      width="24"
-                      height="24"
-                      class="b-icon"
-                    >
-                      <path
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        d="M10.33 2.5a7.83 7.83 0 1 0 4.943 13.904l4.861 4.862a.8.8 0 0 0 1.132-1.132l-4.862-4.862A7.83 7.83 0 0 0 10.33 2.5zM4.1 10.33a6.23 6.23 0 1 1 12.46 0 6.23 6.23 0 0 1-12.46 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <!---->
-                  <input
-                    type="text"
-                    placeholder="Buscar servicios o negocios"
-                    class="b-form-control purify_qSSZCtZkJjEp6SxrS55bcQ=="
-                    data-listener-added_b29d0097="true"
-                  />
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                </div>
-                <!---->
-              </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Peluquería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-pink-500 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4">Peluquería Glam</div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="#servicios" class="hover:text-pink-200 no-underline">Servicios</a></li>
+                <li><a href="#reservas" class="hover:text-pink-200 no-underline">Reservas</a></li>
+                <li><a href="#contacto" class="hover:text-pink-200 no-underline">Contacto</a></li>
+                <li><a href="#login" class="hover:text-pink-200 no-underline">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bienvenida" class="bg-pink-100 text-gray-800 text-center py-20 px-4 rounded-md">
+        <h1 class="text-3xl font-bold mb-4">¡Bienvenido a Peluquería Glam!</h1>
+        <p class="text-lg mb-8">Tu destino para el cuidado y estilo de tu cabello.</p>
+        <button onclick="window.location.href='#reservas'" class="bg-pink-500 text-white py-3 px-6 rounded-full hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-75">
+            Reserva tu cita
+        </button>
+    </section>
+
+    <section id="servicios" class="bg-gray-100 py-20 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-pink-600">Nuestros Servicios</h2>
+        <div class="service-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-pink-500">Corte de Cabello</h3>
+                <p class="text-gray-700 mb-4">Cortes de cabello para hombres, mujeres y niños, adaptados a tu estilo.</p>
+                <button onclick="openModal('modal-corte')" class="bg-pink-400 text-white py-2 px-4 rounded-full hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-75">Ver más</button>
             </div>
-            <!---->
-          </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-pink-500">Coloración</h3>
+                <p class="text-gray-700 mb-4">Coloración completa, reflejos, balayage y más, con productos de alta calidad.</p>
+                <button onclick="openModal('modal-coloracion')" class="bg-pink-400 text-white py-2 px-4 rounded-full hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-75">Ver más</button>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-pink-500">Peinados</h3>
+                <p class="text-gray-700 mb-4">Peinados para ocasiones especiales, eventos y el día a día.</p>
+                <button onclick="openModal('modal-peinados')" class="bg-pink-400 text-white py-2 px-4 rounded-full hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-75">Ver más</button>
+            </div>
         </div>
-        <div data-testid="search-where-desktop">
-          <div
-            class="b-dropdown b-input-dropdown b-w-100p purify_+EKHdWJR+o0Gm2VpKKM6Nw=="
-            data-testid="where-search-dropdown"
-          >
-            <div role="button" class="b-dropdown-toggle">
-              <div class="b-form-field">
-                <!---->
-                <div class="b-form-group purify_yqBOaC4mdKhdWQFs-fCk6w==">
-                  <div class="b-form-group-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      role="img"
-                      width="24"
-                      height="24"
-                      class="b-icon"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M12 11.85a1.899 1.899 0 1 0 0-3.799 1.899 1.899 0 0 0 0 3.798z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        d="M12 2.5c-4.072 0-7.44 3.272-7.44 7.389 0 2.48.977 4.606 2.316 6.46 1.306 1.808 2.993 3.41 4.52 4.859l.092.086a.75.75 0 0 0 1.026.006c1.576-1.462 3.302-3.09 4.629-4.942 1.333-1.862 2.297-3.994 2.297-6.469C19.44 5.772 16.073 2.5 12 2.5zM6.06 9.889C6.06 6.619 8.736 4 12 4c3.263 0 5.94 2.62 5.94 5.889 0 2.062-.797 3.893-2.017 5.595-1.093 1.526-2.498 2.911-3.914 4.237-1.409-1.342-2.816-2.725-3.917-4.25-1.226-1.698-2.033-3.52-2.033-5.582z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <!---->
-                  <input
-                    type="text"
-                    placeholder="¿Dónde?"
-                    class="b-form-control purify_qSSZCtZkJjEp6SxrS55bcQ=="
-                    data-listener-added_b29d0097="true"
-                  />
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
-                </div>
-                <!---->
-              </div>
-            </div>
-            <!---->
-          </div>
-          <div
-            class="modal modal -size-sm"
-            data-testid="search-where-desktop-location-tutorial"
-            style="display: none"
-          >
-            <div data-testid="location-tutorial-modal" class="modal__content">
-              <div class="b-px-6 b-pt-6 b-flex b-justify-end">
-                <button
-                  type="button"
-                  data-testid="where-search-dropdown-tutorial-modal-btn"
-                  class="b-button b-line-base b-button-lite b-button-icononly purify_nxK1Ghh41B4e093chOJJig=="
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    role="img"
-                    width="24"
-                    height="24"
-                    class="b-button-icon b-icon b-text-default"
-                  >
-                    <path
-                      fill="currentColor"
-                      fill-rule="evenodd"
-                      d="M3.265 3.265a.9.9 0 0 1 1.272 0L12 10.727l7.463-7.462a.9.9 0 1 1 1.272 1.272L13.273 12l7.462 7.463a.9.9 0 0 1-1.272 1.272L12 13.273l-7.463 7.462a.9.9 0 0 1-1.272-1.272L10.727 12 3.265 4.537a.9.9 0 0 1 0-1.272z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <!---->
-                  <!---->
-                </button>
-              </div>
-              <div class="b-pb-10 b-px-10">
-                <div>
-                  <span
-                    data-testid="location-tutorial-header"
-                    class="b-h1 b-mb-4"
-                    >Activar servicios de localización</span
-                  >
-                  <p class="b-font-h5 b-mb-8">
-                    ¡Obtén recomendaciones de negocios destacados! Activa los
-                    servicios de ubicación para que podamos mostrarte lo que se
-                    encuentra cerca de ti.
-                  </p>
-                  <div class="b-flex b-flex-column b-flex-gap-4">
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">1</span>
-                      <span class="b-font-h5"
-                        >Haz clic en el ícono de tres puntos del menú en la
-                        esquina superior derecha de la ventana del
-                        navegador.</span
-                      >
-                    </div>
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">2</span>
-                      <span class="b-font-h5"
-                        >Selecciona "Configuración" en el menú
-                        desplegable.</span
-                      >
-                    </div>
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">3</span>
-                      <span class="b-font-h5"
-                        >Desplázate hacia abajo y haz clic en "Privacidad y
-                        seguridad" en la barra lateral izquierda.</span
-                      >
-                    </div>
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">4</span>
-                      <span class="b-font-h5"
-                        >Haz clic en "Configuración de sitios" y desplázate
-                        hacia abajo hasta encontrar la opción "Ubicación".</span
-                      >
-                    </div>
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">5</span>
-                      <span class="b-font-h5"
-                        >Activa la opción para permitir que los sitios soliciten
-                        tu ubicación física.</span
-                      >
-                    </div>
-                    <div class="b-flex b-flex-gap-3 b-items-center">
-                      <span class="purify_a7+lUa+GxbtTw5Vlh49mnw==">6</span>
-                      <span class="b-font-h5"
-                        >Vuelve a Booksy y en la ventana de búsqueda de
-                        ubicaciones haz clic en "Usar mi ubicación
-                        actual".</span
-                      >
-                    </div>
-                    <div class="b-mt-6 b-font-h5 text">
-                      <span>Leer más: </span>
-                      <span
-                        data-testid="location-tutorial-read-more"
-                        class="purify_wq+6hb0efc2IW0gWLuCW3w== b-link"
-                        ><a
-                          href="https://support.google.com/chrome/answer/142065?co=GENIE.Platform%3DDesktop&amp;hl=en"
-                          target="_blank"
-                          rel="noopener"
-                          >Ayuda de Google Chrome - Cambia tu configuración de
-                          ubicación predeterminada</a
-                        ></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    </section>
+
+    <section id="reservas" class="bg-pink-100 py-20 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-pink-600">Reserva tu Cita</h2>
+        <p class="text-lg text-gray-700 mb-8">Reserva tu cita online de manera fácil y rápida. ¡Te esperamos!</p>
+        <button onclick="window.location.href='#contacto'" class="bg-pink-500 text-white py-3 px-6 rounded-full hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-75 text-lg">
+            Haz tu reserva
+        </button>
+    </section>
+
+    <section id="contacto" class="bg-gray-100 py-20 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-pink-600">Contacto</h2>
+        <p class="text-lg text-gray-700 mb-4">¡Contáctanos para cualquier consulta o para programar tu cita!</p>
+        <p class="text-lg text-gray-700">Teléfono: +123 456 7890</p>
+        <p class="text-lg text-gray-700">Email: info@peluqueriaglam.com</p>
+    </section>
+   
+
+    <div id="modal-corte" class="modal fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+            <h2 class="text-xl font-semibold mb-6 text-pink-500 text-center">Corte de Cabello</h2>
+            <p class="text-gray-700 mb-4">Ofrecemos una amplia variedad de cortes de cabello para hombres, mujeres y niños. Nuestro equipo de estilistas expertos te asesorará para encontrar el estilo perfecto que se adapte a tu personalidad y tipo de cabello.</p>
+            <ul class="list-disc list-inside mb-6 text-gray-700">
+                <li>Corte clásico</li>
+                <li>Corte moderno</li>
+                <li>Corte con estilo</li>
+                <li>Corte para niños</li>
+                <li>Flequillos y capas</li>
+            </ul>
+            <button onclick="closeModal('modal-corte')" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 w-full">Cerrar</button>
         </div>
-        <div data-testid="search-when">
-          <div
-            data-testid="search-when-trigger"
-            role="button"
-            class="b-flex b-items-center b-justify-between b-w-100p b-rounded-lg b-py-3 b-pl-3 b-pr-2 b-cursor-pointer purify_HALqU9pdInlO7ho+nOeweA=="
-          >
-            <div
-              class="purify_l8u0Twf1cOoQc-x1brKGzw== b-flex b-items-center b-h-100p"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                role="img"
-                width="24"
-                height="24"
-                class="b-icon b-text-secondary purify_tlc21oc3gxzZADzRO3rF9Q=="
-              >
-                <path
-                  fill="currentColor"
-                  d="M11.51 6.622a.75.75 0 0 1 1.5 0v6.052a.75.75 0 0 1-.75.75H7.83a.75.75 0 0 1 0-1.5h3.679V6.622z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                  d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zM4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span
-                data-testid="search-when-trigger-placeholder"
-                class="purify_zFV59ayvzIUBIbSYVMLivw=="
-              >
-                ¿Cuándo?
-              </span>
-            </div>
-            <!---->
-          </div>
-        </div>
-      </div>
-      <div class="purify_3WWcACV+LP5dir7o1YO6VA==">
-        <div class="purify_nXv6b4OYs2fOcxmVnO7KmA==">
-          <span
-            data-testid="login-modal"
-            data-dd-action-name="click-web-log-in-sign-up-button"
-            class="purify_gwIWii6bSjpTk5oBenPMig=="
-            ><div
-              data-testid="avatar"
-              class="purify_VPzWCuFcQe8J1YX8XjKUdQ== purify_1B0EKSrPdjL-nxgM-qC+KQ=="
-            >
-              <div class="purify_blNSZsAkMeJa2Y7lic-oUQ==">
-                <div
-                  mode="default"
-                  class="purify_4CtotknPQnL+dpWwDed22A== purify_rsqf+RNT-SJBgrMpqbooUA== purify_lVOlsMf9EqZkFabIPEnMJg=="
-                  data-testid="avatar-placeholder"
-                  style="width: 32px; height: 32px"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M12 12.917c5.523 0 10 4.203 10 9.388 0 .384-.331.695-.74.695s-.74-.311-.74-.695c0-4.418-3.814-7.999-8.52-7.999-4.706 0-8.52 3.581-8.52 8 0 .383-.331.694-.74.694S2 22.689 2 22.305c0-5.185 4.477-9.388 10-9.388zM11.671 1a5.122 5.122 0 0 1 5.126 5.117 5.122 5.122 0 0 1-5.126 5.117 5.122 5.122 0 0 1-5.126-5.117A5.122 5.122 0 0 1 11.671 1zm0 1.41a3.71 3.71 0 0 0-3.713 3.707 3.71 3.71 0 0 0 3.713 3.707 3.71 3.71 0 0 0 3.714-3.707A3.71 3.71 0 0 0 11.67 2.41z"
-                    ></path>
-                  </svg>
-                </div>
-                <!---->
-              </div>
-            </div>
-            <span
-              class="purify_Rh0o2HvMtj4VvUvCDOXUow== purify_IbX1Bb-sl2ffhqyi9xUH1A== purify_m9mNOPjpHD0tNTW6GC+hEw=="
-            >
-              Abrir la sesión/Registrarse
-            </span></span
-          >
-        </div>
-        <span
-          data-testid="select-country"
-          class="purify_eoYnm+8wmlyb5JDBMsLcqA=="
-          ><div
-            class="purify_79rwxp-sCVOQL0D6UnJwqw== purify_twXdsqLnE6dFz95zEJ-Z7A=="
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16">
-              <g fill-rule="evenodd" fill="none">
-                <path
-                  fill="#fedc36"
-                  d="m0 7.91847619h23.7561905v-7.91847619h-23.7561905z"
-                ></path>
-                <path
-                  fill="#0437a0"
-                  d="m0 11.8777143h23.7569524v-3.95923811h-23.7569524z"
-                ></path>
-                <path
-                  fill="#f90805"
-                  d="m0 15.8373333h23.7569524v-3.959619h-23.7569524z"
-                ></path>
-              </g>
-            </svg>
-          </div>
-          <span
-            class="purify_Jx83cfuVqP0AgyS6pmBidA== purify_Sardy6hfiet162IZ2pYFPA== purify_m9mNOPjpHD0tNTW6GC+hEw=="
-          >
-            co
-          </span>
-          <div
-            mode="default"
-            class="purify_4CtotknPQnL+dpWwDed22A== purify_tLN8FKq9qvncJ7D-6FLYWw=="
-            style="width: 7px; height: 7px"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M21.282 7.304A1 1 0 0 1 22.8 8.6l-.082.095-9.484 9.78a1.714 1.714 0 0 1-2.34.12l-.126-.118-9.486-9.782A1 1 0 0 1 2.625 7.22l.093.085L12 16.875l9.282-9.571z"
-              ></path>
-            </svg></div
-        ></span>
-        <!---->
-        <a
-          href="https://booksy.com/biz/es-co/?utm_source=cust_web&amp;utm_medium=button&amp;utm_campaign=b2bb2csection"
-          target="_blank"
-          data-testid="biz-link"
-          class="purify_hGP51ompXz8G-HlzrF5wTQ== purify_kq4BZr36QXoLgkAnN95TWw== purify_m9mNOPjpHD0tNTW6GC+hEw=="
-        >
-          Añade tu negocio a la lista
-        </a>
-      </div>
     </div>
-  </div>
-</section>
+
+    <div id="modal-coloracion" class="modal fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+            <h2 class="text-xl font-semibold mb-6 text-pink-500 text-center">Coloración</h2>
+            <p class="text-gray-700 mb-4">Transforma tu look con nuestros servicios de coloración. Utilizamos productos de alta calidad para garantizar un color vibrante y duradero, mientras cuidamos la salud de tu cabello.</p>
+            <ul class="list-disc list-inside mb-6 text-gray-700">
+                <li>Coloración completa</li>
+                <li>Reflejos</li>
+                <li>Balayage</li>
+                <li>Ombré</li>
+                <li>Retoque de raíz</li>
+            </ul>
+            <button onclick="closeModal('modal-coloracion')" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 w-full">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modal-peinados" class="modal fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+            <h2 class="text-xl font-semibold mb-6 text-pink-500 text-center">Peinados</h2>
+            <p class="text-gray-700 mb-4">Realzamos tu belleza con nuestros servicios de peinados para cualquier ocasión. Desde estilos sencillos y elegantes hasta peinados elaborados para eventos especiales.</p>
+            <ul class="list-disc list-inside mb-6 text-gray-700">
+                <li>Peinados para el día a día</li>
+                <li>Peinados para eventos</li>
+                <li>Peinados de novia</li>
+                <li>Recogidos</li>
+                <li>Trenzas</li>
+            </ul>
+            <button onclick="closeModal('modal-peinados')" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 w-full">Cerrar</button>
+        </div>
+    </div>
+    
+    <div id="login" class="modal fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+            <h2 class="text-xl font-semibold mb-6 text-pink-500 text-center">Iniciar sesión / Registrarse</h2>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo electrónico</label>
+                <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
+                <input type="password" id="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="flex items-center justify-between mb-4">
+                <button onclick="login()" class="bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600 focus:outline-none focus:shadow-outline">Iniciar sesión</button>
+                <button onclick="register()" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full hover:bg-gray-400 focus:outline-none focus:shadow-outline">Registrarse</button>
+            </div>
+            <button onclick="closeModal('login')" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 w-full">Cerrar</button>
+        </div>
+    </div>
+
+<script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "flex";
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+    document.body.style.overflow = 'unset';
+}
+
+function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    alert(`Iniciando sesión con correo: ${email} y contraseña: ${password}`);
+    closeModal('login');
+}
+
+function register() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    alert(`Registrando usuario con correo: ${email} y contraseña: ${password}`);
+    closeModal('login');
+}
+</script>
+</body>
+</html>
