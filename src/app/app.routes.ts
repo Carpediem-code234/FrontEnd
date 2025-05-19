@@ -14,10 +14,13 @@ import { ServicesManagementComponent } from './services-management/services-mana
 import { StylistsManagementComponent } from './stylists-management/stylists-management.component';
 import { ReservationsAdminComponent } from './reservations-admin/reservations-admin.component';
 import { ReportsComponent } from './reports/reports.component';
+import {LoginRegistroComponent} from './user-acces/login-registro.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
+  //{ path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginRegistroComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent },
