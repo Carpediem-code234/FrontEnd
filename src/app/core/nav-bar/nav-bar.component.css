@@ -1,0 +1,41 @@
+nav {
+  background: #222;
+  background-color: #333;
+  padding: 10px 0.5rem;
+}
+
+nav ul {
+  font-family: "Chivo Mono", monospace;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+nav a,
+ul li a {
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+
+ul:hover li a {
+  color: #30edfa;
+}
+ul:hover li a:not(:hover) {
+  color: white;
+  opacity: 0.3;
+  filter: blur(1px);
+}
+
+
