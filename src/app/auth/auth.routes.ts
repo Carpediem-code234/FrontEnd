@@ -3,5 +3,6 @@ import { LoginRegistroComponent } from './login-registro/login-registro.componen
 //import { AuthGuard } from './auth/auth.guard';
 
 export const authRoutes: Routes = [
-  { path: 'login', component: LoginRegistroComponent }
+  //por momento se va dejar el login defautl
+  { path: '', component: LoginRegistroComponent }
 ];
