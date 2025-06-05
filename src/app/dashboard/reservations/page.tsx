@@ -18,8 +18,7 @@ import {
   Trash2,
   CheckCircle,
   XCircle,
-  AlertCircle,
-  MessageCircle,
+  AlertCircle
 } from "lucide-react"
 
 interface Reservation {
@@ -136,12 +135,6 @@ export default function ReservationsPage() {
     alert("Funcionalidad de reprogramación próximamente")
   }
 
-  const handleStartChat = (salonName: string) => {
-    // TODO: Integrar con Google Chat API usando: 46295657430-sl7tguq0qj57v7ia4lcabq58p3k40qnd.apps.googleusercontent.com
-    console.log("Iniciando chat con:", salonName)
-    alert(`Iniciando chat con ${salonName}...`)
-  }
-
   const ReservationCard = ({
     reservation,
     showActions = true,
@@ -224,10 +217,6 @@ export default function ReservationsPage() {
                 <div className="space-y-4">
                   <ReservationCard reservation={reservation} showActions={false} />
                   <div className="flex gap-2">
-                    <Button className="flex-1" onClick={() => handleStartChat(reservation.salonName)}>
-                      <MessageCircle className="h-4 w-4 mr-2" />
-                      Chat con el Salón
-                    </Button>
                     <Button variant="outline" className="flex-1">
                       <MapPin className="h-4 w-4 mr-2" />
                       Ver Ubicación

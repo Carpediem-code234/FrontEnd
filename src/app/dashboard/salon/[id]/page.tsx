@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar } from "@/components/ui/calendar"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowLeft, Star, MapPin, Phone, User, Heart, Share2, MessageCircle } from "lucide-react"
+import { ArrowLeft, Star, MapPin, Phone, User, Heart, Share2} from "lucide-react"
 import Link from "next/link"
 import { useParams } from "next/navigation"
 
@@ -98,12 +98,6 @@ export default function SalonDetailPage() {
     console.log("Datos de reserva:", bookingData)
     alert("¡Reserva realizada con éxito!")
     setIsBookingOpen(false)
-  }
-
-  const handleStartChat = (salonName: string) => {
-    // TODO: Integrar con Google Chat API
-    console.log("Iniciando chat con:", salonName)
-    alert(`Iniciando chat con ${salonName}...`)
   }
 
   return (
@@ -285,10 +279,6 @@ export default function SalonDetailPage() {
                     <Phone className="h-4 w-4 text-gray-500" />
                     <span className="text-sm">{salon.phone}</span>
                   </div>
-                  <Button className="w-full" onClick={() => handleStartChat(salon.name)}>
-                    <MessageCircle className="h-4 w-4 mr-2" />
-                    Chat con el Salón
-                  </Button>
                 </CardContent>
               </Card>
 

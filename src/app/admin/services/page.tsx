@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowLeft, Plus, Search, Edit, Trash2, Clock, Euro, Tag } from "lucide-react"
+import { ArrowLeft, Plus, Search, Edit, Trash2, Clock, DollarSign, Tag } from "lucide-react"
 import Link from "next/link"
 
 interface Service {
@@ -308,7 +308,7 @@ export default function ServicesManagementPage() {
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 text-sm">
-                        <Euro className="h-4 w-4 text-green-600" />
+                        <DollarSign className="h-4 w-4 text-green-600" />
                         <span className="font-semibold">€{service.price}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-600">

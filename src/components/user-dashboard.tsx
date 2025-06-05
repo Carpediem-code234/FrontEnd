@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 //import { useAuth } from "@/context/AuthContext"
-import { User, MapPin, MessageCircle } from "lucide-react"
+import { User, MapPin} from "lucide-react"
 import { NavigationBar } from "./navigation-bar"
 import { SearchFilters } from "./search-filters"
 import { useState } from "react"
@@ -61,12 +61,6 @@ export default function UserDashboard() {
 
     return matchesSearch && matchesLocation && matchesService && matchesRating
   })
-
-  const handleStartChat = (salonId: number) => {
-    // TODO: Integrar con Google Chat API
-    console.log("Iniciando chat con salón:", salonId)
-    alert("Iniciando chat con la peluquería...")
-  }
 
   const handleViewDetails = (salonId: number) => {
     window.location.href = `/dashboard/salon/${salonId}`
@@ -145,9 +139,6 @@ export default function UserDashboard() {
                       onClick={() => handleViewDetails(salon.id)}
                     >
                       Ver Detalles
-                    </Button>
-                    <Button variant="outline" size="icon" onClick={() => handleStartChat(salon.id)}>
-                      <MessageCircle className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>

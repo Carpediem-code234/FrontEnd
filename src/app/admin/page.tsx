@@ -14,7 +14,7 @@ import {
   UserCheck,
   Clock,
   Star,
-  Euro,
+  DollarSign,
   AlertTriangle,
 } from "lucide-react"
 import Link from "next/link"
@@ -53,7 +53,14 @@ export default function AdminPage() {
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-sm text-gray-600">Bienvenido, {user?.name}</span>
-                <Button variant="outline" size="sm" onClick={logout}>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    logout(); // Llama a la función para cerrar sesión
+                    window.location.href = "/"; // Redirige al inicio
+                  }}
+                >
                   <LogOut className="h-4 w-4 mr-2" />
                   Cerrar Sesión
                 </Button>
@@ -90,7 +97,7 @@ export default function AdminPage() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Ingresos Mensuales</CardTitle>
-                <Euro className="h-4 w-4 text-muted-foreground" />
+                <DollarSign className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">${stats.monthlyRevenue.toLocaleString()}</div>
