@@ -322,7 +322,7 @@ export default function ReservationsManagementPage() {
                       <span>{reservation.employeeName}</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm font-semibold">
-                      <span>€{reservation.price}</span>
+                      <span>${reservation.price}</span>
                     </div>
                   </div>
 
@@ -427,7 +427,7 @@ export default function ReservationsManagementPage() {
                               <h4 className="font-medium">Estado y Precio</h4>
                               <div className="flex items-center gap-2">
                                 {getStatusBadge(selectedReservation.status)}
-                                <span className="font-semibold">€{selectedReservation.price}</span>
+                                <span className="font-semibold">${selectedReservation.price}</span>
                               </div>
                             </div>
                             {selectedReservation.notes && (

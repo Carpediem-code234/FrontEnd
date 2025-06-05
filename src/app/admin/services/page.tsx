@@ -206,7 +206,7 @@ export default function ServicesManagementPage() {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="servicePrice">Precio (€)</Label>
+                        <Label htmlFor="servicePrice">Precio ($)</Label>
                         <Input
                           id="servicePrice"
                           type="number"
@@ -309,7 +309,7 @@ export default function ServicesManagementPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 text-sm">
                         <DollarSign className="h-4 w-4 text-green-600" />
-                        <span className="font-semibold">€{service.price}</span>
+                        <span className="font-semibold">${service.price}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-600">
                         <Clock className="h-4 w-4" />
